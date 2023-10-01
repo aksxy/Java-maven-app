@@ -4,11 +4,11 @@ pipeline {
 		choice(name: 'VERSION', choices: ['1.1.0', '1.2.0', '1.3.0'], description: 'Select the version to deploy to prod')
 		booleanParam(name: 'executeTests', defaultValue: true, description: 'Run tests during deployment')
 	}
-	environment {
+	//environment {
 		// Remove unused environment variables
 		// NEW_VERSION = '1.3.0'
 		// SERVER_CREDENTIALS = credentials('Server-Credentials')
-	}
+	//}
 	stages {
 		stage("build") {
 			steps {
