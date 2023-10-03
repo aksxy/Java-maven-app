@@ -6,8 +6,8 @@ def gv
 pipeline {
     agent any
     tools {
-		maven 'mavan-3.6'
-	}
+        maven 'mavan-3.6'
+    }
     stages {
         stage("init") {
             steps {
@@ -20,8 +20,7 @@ pipeline {
             steps {
                 script {
                     echo "building jar"
-                   // gv.buildJar()
-		   buildJar()
+                    buildJar()
                 }
             }
         }
@@ -29,8 +28,7 @@ pipeline {
             steps {
                 script {
                     echo "building image"
-                   // gv.buildImage()
-		   buildImage()
+                    buildImage()
                 }
             }
         }
