@@ -28,7 +28,8 @@ pipeline {
             steps {
                 script {
                     echo "building image"
-                    buildImage()
+                    //buildImage()
+                    buildImage 'aksxy/java-maven-app:jma-3.0' //passing value in buildImage.groovy for $imageNmae parameter
                 }
             }
         }
