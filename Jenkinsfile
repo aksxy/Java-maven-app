@@ -18,6 +18,7 @@ pipeline {
 			steps {
 				script {
 					echo "Building the application.."
+					echo 'hi I am akshay...!'
 				}
 			}
 		}
