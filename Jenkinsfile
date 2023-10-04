@@ -29,7 +29,14 @@ pipeline {
                 script {
                     echo "building image"
                     //buildImage()
-                    buildImage 'aksxy/java-maven-app:jma-3.0' //passing value in buildImage.groovy for $imageNmae parameter
+                  //  buildImage 'aksxy/java-maven-app:jma-3.0' //passing value in buildImage.groovy for $imageNmae parameter
+
+                    //calling function for each work
+                    buildImage 'aksxy/java-maven-app:jma-3.0' //build image
+                    dockerLogin() //login 
+                    dockerPush 'aksxy/java-maven-app:jma-3.0' //push image
+                     
+                    
                 }
             }
         }
