@@ -18,7 +18,7 @@ pipeline {
 			steps {
 				script {
 					echo "Building the application.."
-					echo 'hi I am akshay...! and trying to auto building the application..?'
+					//echo 'hi I am akshay...! and trying to auto building the application..?'
 					echo 'check the auto push and build work or not'
 				}
 			}
