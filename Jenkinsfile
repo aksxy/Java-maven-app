@@ -19,7 +19,7 @@ pipeline {
 				script {
 					echo "Building the application.."
 					echo 'hi I am akshay...! and trying to auto building the application..?'
-					echo 'we added a weoob hook and ssh'
+					echo 'check the auto push and build work or not'
 				}
 			}
 		}
